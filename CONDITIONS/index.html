@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+  <head>
+    <title>
+      vuejs
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <button v-on:click="incrimente"> {{ increase }} </button> <button v-on:click="decrimente"> {{ decrease }} </button>
+      <p>Compteur: {{ compteur }} </p>
+      <p>Le resultat est {{ this.moyenne = this.compteur > 5 ? 'superieure' : 'inferieure' }} à la moyenne </p> -->
+
+      <button v-on:click="compteur++"> {{ increase }} </button> <button v-on:click="compteur--"> {{ decrease }} </button>
+      <p>Compteur: {{ compteur }} </p>
+      <p>Le resultat est
+        <span v-if=" this.compteur > 5"> superieure </span>
+        <span v-else-if=" this.compteur == 5"> égale </span>
+        <span v-else=" this.compteur == 5"> inferieure </span>
+        à la moyenne </p>
+
+    </div>
+  <script src="custom.js"></script>
+  </body>
+</html>
